@@ -398,7 +398,7 @@ footer{
   flex-direction: row;
   justify-content: space-between;
 }
-.terms__policies p{
+.terms__policies a p{
   color: #FFFFFF;
   font-size: 1.5vh;
   line-height: 24px;
