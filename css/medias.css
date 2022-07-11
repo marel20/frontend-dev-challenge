@@ -13,26 +13,87 @@
                 margin-top: 14.5%;
             }
             .container__menu{
-                width: 60%;
-                height: 99vh;
+                width: 65%;
             }
             .nav__link{
                 margin-left: 0px;
             }
+            .titles__all{
+                justify-content: flex-start;
+            }
+            .titles p{
+                width: 100%;
+            }
+            .text__card{
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .Text, .Text p{
+                width: 100%;
+            }
+            .Card{
+                width: 100%;
+            }
+            .img__advertising{
+                flex-direction: column;
+                justify-content: center;
+            }
+            .img img{
+                max-width: 100%;
+                margin-top: 8%;
+            }
+            .logo__ES{
+                max-width: 90%;
+                margin-bottom: 15%;
+            }
+            .img__comments .comments{
+                width: 100%;
+            }
+            .form__faq{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .faq{
+                width: 100%;
+            }
+            .worked{
+                position: absolute;
+                top: 3450px;
+                left: 50px;
+            }
+            .logo__icon{
+                position: absolute;
+                top: 3850px;
+                right: 5px;
+                max-width: 50%;
+            }
+            .newsletter{
+                margin-top: 80%;
+                flex-direction: column;
+            }
+            .news img{
+                max-width: 100%;
+                margin-left: -8%;
+            }
+            .subscribe{
+                margin: 5% auto 2% 5%;
+            }
+            .subscribe button{
+                margin-left: -29%;
+            }
+            .logo__text{
+                width: 100%;
+                flex-direction: column;
+            }
+            .logo__text p{
+                width: 90%;
+                margin: 3% auto;
+            }
+            .terms__policies{
+                width: 95%;
+                justify-content: flex-start;
+            }
           }
         
-                /*-- 987px --*/
-        @media (min-width: 768px) and (max-width: 987px) {
-
-        }
-        
-                /*-- 1279px --*/
-        @media (min-width: 988px) and (max-width: 1279px) {
-
-        }
-        
-                /*-- 1280+px --*/
-        @media (min-width: 1280px) and (max-width: 2500px){
-
-        }
-/*------Start Medias Queries------*/
+/*------End Medias Queries------*/
