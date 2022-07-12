@@ -14,7 +14,7 @@
     visibility: hidden;
 }
 
-header{
+nav{
     position: fixed;
     width: 100%;
     top: 0;
@@ -22,7 +22,7 @@ header{
     z-index: 1500;
 }
 
-nav{
+.Nav{
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -64,11 +64,16 @@ nav span{
 }
 
 .container__menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
   background-color: #FFFFFF;
   width: 25%;
   height: 99vh;
   transition: 0.5s;
   transform: translateX(-100%);
+  margin-top: 2.6%;
 }
 
 .pregnancy h2, .education h2{
@@ -116,7 +121,6 @@ nav span{
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
-  margin-top: 3.5%;
 }
 
 .slide{
@@ -323,6 +327,43 @@ nav span{
   flex-direction: row;
   align-items: flex-start;
 }
+.Form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Form h2{
+  color: #414141; 
+  margin: 0;}
+  
+.Form input, textarea{
+  margin: 5% 0 0 0;
+  border-radius: 8px;
+  border: 1px solid #273B63;
+  padding: 8px;
+  width: 100%;
+}
+.Form .name__surname{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Form .button{
+  width: 100%;
+  margin-top: 3%;
+  border: 1px solid #265E6C;
+  background-color: #265E6C;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 8px;
+}
+.Form select{
+  margin-top: 5%;
+  border: 1px solid #273B63;
+  padding: 8px;
+}
 .faq p{
   color: #414141;
   font-weight: bold;
@@ -334,10 +375,14 @@ nav span{
 .faq{
   width: 35%;
   margin-top: 5%;
+}
+.faq div{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-left: 20%;
+  margin-left: 80%;
+  border-bottom: 2px dashed #414141;
+  width: 65%;
 }
 .logo__icon{
   display: flex;

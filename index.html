@@ -13,15 +13,17 @@
 <body>
     <header>
         <nav>
-            <span id="open__close" >
-                <div class="line__1"></div>
-                <div class="line__2"></div>
-                <div class="line__3"></div>
-            </span>
+            <div class="Nav">
+                <span id="open__close" >
+                    <div class="line__1"></div>
+                    <div class="line__2"></div>
+                    <div class="line__3"></div>
+                </span>
 
-            <img src="assets/logo/menteMaravillosa.png" alt="la_mente_es_maravillosa">
+                <img src="assets/logo/menteMaravillosa.png" alt="la_mente_es_maravillosa">
 
-            <img src="assets/icons/search.png" alt="search">
+                <img src="assets/icons/search.png" alt="search">
+            </div>
         </nav>
         <div>
             <div id="menu__hamburguer" class="container__menu">
@@ -45,6 +47,7 @@
                 </div>
             </div>
         </div>
+        
     </header> 
 
     <div class="container__slide">
@@ -139,55 +142,56 @@
             </div>
         </div>
 
-        <div class="worked">
+        <div class="worked visible">
             <img src="assets/img/worked.png" alt="worked">
         </div>
         
         <div class="form__faq">
-            <form action="" class="Form">
-                <div>
-                    <input name="radio" type="radio" /> Sí
-                </div>
-                <div>
-                    <input name="checkbox" type="checkbox" /> Acepto
-                </div>
-                <div>
-                    <input name="No, gracias" type="text" placeholder="No, gracias" />
-                </div>
-                <div>
-                    <button>OK!</button>
-                </div>
-                <div>
-                    <button><img src="assets/icons/search.png" alt="search" />Búsqueda</button>
-                </div>
-                <div>
-                    <input type="email" name="email" placeholder="Ingrese su correo" required />
-                </div>
-                <div>
-                    <select name="select" id="select" aria-placeholder="Select" required />
-                        <option value="1">Opción 1</option>
-                        <option value="2">Opción 2</option>
-                        <option value="3">Opción 3</option>
+            <section>
+                <form name="form" action="" class="Form">
+                    <h2>Contacto</h2>
+                    <div class="name__surname">
+                        <input type="text"  id="name" name="name" placeholder="Nombre" required   />
+                        <input type="text"  id="surname" name="surname" placeholder="Apellido" required   />
+                    </div>
+                    <input type="text" id="address" name="address" placeholder="Dirección" required   />
+                    <input type="email" id="email" name="email" placeholder="Email" required   />
+                    <input type="number" id="phone" name="phone" placeholder="Teléfono" required   />
+                    <select name="select" id="select"> Seleccione una opción:
+                        <option value="1">Quiero ser mamá</option>
+                        <option value="2">Voy a ser mamá</option>
+                        <option value="3">Parto</option>
+                        <option value="4">Aprende a ser mamá</option>
+                        <option value="5">Educación para bebés</option>
+                        <option value="6">Educación para niños</option>
                     </select>
-                </div>
-                <div>
-                    <textarea name="textarea" id="" cols="30" rows="10" placeholder="Su mensaje" /></textarea>
-                </div>  
-            </form>
+                    <div>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                    </div>
+                    <textarea name="textarea" id="textarea" rows="6" placeholder="Su mensaje"></textarea>
+                    <input type="submit" class="button" value="Enviar Datos">
+                </form>
+            </section>
             <div class="faq">
-                <p>
-                    ¿Cuáles son los pasos para tomar una decisión? 
-                </p> 
-                <img src="assets/icons/arrow__down.png" alt="arrow__down">
+                <div>
+                    <p>
+                        ¿Cuáles son los pasos para tomar una decisión? 
+                    </p> 
+                    <img src="assets/icons/arrow__down.png" alt="arrow__down">
+                </div>
             </div>
         </div>
 
-        <div class="logo__icon">
+        <div class="logo__icon visible">
             <img src="assets/logo/logo__icon.png" alt="logo__icon">
         </div>
 
         <div class="long__advertising visible">
             <img src="assets/img/advertisingLong.png" alt="long__advertising">
+        </div>
+
+        <div class="worked hidden">
+            <img src="assets/img/worked.png" alt="worked">
         </div>
 
     </div>
@@ -196,6 +200,9 @@
         <div class="news">
             <img src="assets/img/news.png" alt="news">
         </div>
+        <div class="logo__icon hidden">
+            <img src="assets/logo/logo__icon.png" alt="logo__icon">
+        </div>
         <div class="subscribe">
             <h3>Titlee</h3>
             <p>Text</p>
@@ -203,13 +210,14 @@
             <input type="email" size="35" placeholder="Ingrese su correo" />
             <button>Suscribirse</button>
         </div>
+
     </div>
 
     <footer>
         <div class="logo__text">
             <img src="assets/logo/mcontigo.png" alt="mcontigo">
             <p>
-                La Mente es Maravillosa is a property of Grupo MContigo© 2012 – 2020. All rights reserved. <br>
+                La Mente es Maravillosa is a property of Grupo MContigo© 2012 / 2020. All rights reserved. <br>
                 Los contenidos de esta publicación se redactan solo con fines informativos. En ningún momento pueden servir para facilitar diagnósticos o sustituir la labor de un profesional. Le recomendamos que contacte con su especialista de confianza.
             </p>
         </div>
