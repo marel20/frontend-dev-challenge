@@ -310,10 +310,35 @@ nav span{
   letter-spacing: -2%;
   font-weight: bold;
 }
+.radius{
+  width: 50%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.radius .radius__active{
+  background-color: #696969;
+}
+.radius div{
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #CACACA;
+}
 .logo__ES{
   margin-top: 25%;
 }
 
+.up{
+  position: fixed;
+  line-height: 64px;
+  bottom: 5px;
+  right: 15px;
+  text-align: center;
+  z-index: 100;
+}
 .worked{
   display: flex;
   flex-direction: row;
@@ -373,17 +398,54 @@ nav span{
   margin-right: 10%;
 }
 .faq{
-  width: 35%;
-  margin-top: 5%;
+  width: 100%;
+  margin: 5% 0 0 20%;
 }
 .faq div{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  margin-left: 80%;
-  border-bottom: 2px dashed #414141;
   width: 65%;
 }
+.faq .accordion{
+  background-color: #ECF0F7;
+  padding: 8px;
+}
+.faq .accordion .accordion__panel{
+  width: 100%;
+  padding: 8px;
+  margin: 0 0 1% 0;
+}
+.faq .accordion .accordion__tittle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #7D7D7D;
+  color: #000000;
+  border: none;
+  border-bottom: 4px dashed #000000;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0% 1% 0;
+  padding: 8px;
+  cursor: pointer;
+}
+.faq .accordion .accordion__text{
+  width: 100%;
+  /*background-color: #555555;*/
+  padding: 0px;
+  height: 0px;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+.faq .accordion .accordion__panel.active .accordion__text{
+  height: 100px;
+}
+
 .logo__icon{
   display: flex;
   flex-direction: row;
@@ -406,8 +468,13 @@ nav span{
   margin-top: 3%;
   background-color: #ECF0F7;
 }
-.subscribe button{
-  margin-left: -24%;
+.subscribe .button{
+  margin-left: -25%;
+  border-radius: 8px;
+  border: 1px solid #265E6C;
+  background-color: #265E6C;
+  color: #FFFFFF;
+  font-weight: bold;
   padding: 6px;
 }
 .subscribe input{
@@ -436,6 +503,22 @@ footer{
   font-size: 12px;
   line-height: 16px;
   letter-spacing: -2%;
+}
+.separator{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 2% auto;
+}
+.separator div{
+  width: 10px;
+  height: 0;
+  border-top: #337E93 20px solid;
+  transform: skew(-45deg);
+  -webkit-clip-path: polygon(0 0, 96% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 96% 0, 100% 100%, 0% 100%);
 }
 .terms__policies{
   width: 70%;

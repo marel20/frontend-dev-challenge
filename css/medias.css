@@ -62,10 +62,9 @@
             .faq{
                 width: 100%;
             }
-            .faq div{
-                margin-top: 5%;
-                margin-left: 5%;
-                width: 90%;
+            .faq div, .faq .button__accordion{
+                width: 100%;
+                margin-left: -10%;
             }
             .worked{
                 margin: 50% auto 0 auto;
@@ -83,8 +82,11 @@
             .subscribe{
                 margin: 5% auto 2% 5%;
             }
-            .subscribe button{
-                margin-left: -29%;
+            .subscribe .button{
+                margin-left: -30%;
+            }
+            .separator{
+                width: 100%;
             }
             .logo__text{
                 width: 100%;
