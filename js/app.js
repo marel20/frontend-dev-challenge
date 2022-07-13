@@ -15,3 +15,15 @@ window.onscroll = function() {
         document.getElementById('up').style.display = 'none';
     }
 }
+
+const accordionPanel = document.querySelectorAll('.accordion__panel');
+const accordionTittle = document.querySelectorAll('.accordion__tittle');
+
+accordionTittle.forEach( ( cadaaccordionTittle , i ) => {
+    accordionTittle[i].addEventListener('click', () => {
+        accordionPanel.forEach( ( cadaaccordionPanel , i ) => {
+            accordionPanel[i].classList.remove('active');
+            console.log('estoy')
+        })
+    })
+})
