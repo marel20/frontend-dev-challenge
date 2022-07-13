@@ -25,5 +25,6 @@ accordionTittle.forEach( ( cadaaccordionTittle , i ) => {
             accordionPanel[i].classList.remove('active');
             console.log('estoy')
         })
+        accordionPanel[i].classList.add('active');
     })
 })
