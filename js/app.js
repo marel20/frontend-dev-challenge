@@ -83,8 +83,32 @@ function search() {
     }
 }
 
-function formularioEnviado(){
+function sendData(){
+    var name = document.getElementById('name').value;
+    var surname = document.getElementById('surname').value;
+    var address = document.getElementById('address').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var select = document.getElementById('select').value;
+    var checkbox = document.getElementById('checkbox').value;
+    var textarea = document.getElementById('textarea').value;
 
-    alert('Su formulario fue enviado correctamente');
+    if (name == "" || surname == "" || address == "" || email == "" || phone == "" || select == "" || checkbox == "NO" || textarea == ""){
+        alert('Debe completar todos los campos');
+    }else{
+        if (confirm('¿Estas seguro de enviar este formulario?')){
+            alert('Datos enviados correctamente');
+            console.log(name);
+            console.log(surname);
+            console.log(address);
+            console.log(email);
+            console.log(phone);
+            console.log(select);
+            console.log(checkbox);
+            console.log(textarea);
+        }
+    }
+
+
         
 }
