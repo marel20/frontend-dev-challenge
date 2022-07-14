@@ -445,7 +445,7 @@ letter-spacing: 2%;
   position: fixed;
   line-height: 64px;
   bottom: 5px;
-  right: 34px;
+  right: 50px;
   text-align: center;
   z-index: 1000;
 }
