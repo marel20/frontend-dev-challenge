@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html body{
+  background-color: #E5E5E5;
+}
 
 .visible{
     display: block;
@@ -12,6 +17,13 @@
 .hidden{
     display: none;
     visibility: hidden;
+}
+
+.Row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 nav{
@@ -23,13 +35,9 @@ nav{
 }
 
 .Nav{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
   justify-content: space-around;
   background-color: #FFFFFF;
   padding: 0.5rem;
-  max-width: 100%;
 }
 
 nav span{
@@ -79,15 +87,17 @@ nav span{
 .pregnancy h2, .education h2{
   color: #B378FF;
   font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 32px;
+  letter-spacing: 2%;
+  font-size: 24px;
 }
 .pregnancy hr, .education hr{
   color: #486DB7;
 }
 
 .nav__link{
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   margin-left: 10px;
   width: 100%;
@@ -99,6 +109,10 @@ nav span{
   text-decoration: none;
   color: #555555;
   padding: 8px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 24px;
+  letter-spacing: 2%;
+  font-size: 16px;
 }
 
 .nav__item:hover{
@@ -184,19 +198,41 @@ nav span{
 }
 
 .titles__all{
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: nowrap;
 }
 .titles h1{
   margin: 2% 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: -2%;
+  line-height: 40px;
+  color: #000000;
+}
+.titles h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: -2%;
 }
 .titles p{
-  width: 50%;
+  width: 80%;
   color: #000000;
   margin: 1% 0;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  letter-spacing: -2%;
+  line-height: 24px;
+}
+.titles .text__regular{
+  display: block;
+}
+.titles .text__bold{
+  font-weight: bold;
+  display: none;
 }
 .titles button{
   padding: .5rem;
@@ -205,30 +241,47 @@ nav span{
   color: #FFFFFF;
   margin: 1% 0;
 }
+.titles__all .button{
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #696969;
+  color: #FFFFFF;
+}
 .excerp{
-  border-left: .125rem solid #486DB7;
+  border-left: 2px solid #486DB7;
+  margin: 0 auto;
 }
-.excerp p{
+.excerp h4{
+  color: #486DB7;
   margin-left: 5%;
+  text-align: justify;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 32px;
+  letter-spacing: -2%;
 }
 .excerp p{
-  width: 288px;
-  color: #000000;
+  width: 300px;
+  color: #414141;
+  font-size: 16px;
+  margin-left: 5%;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 24px;
+  letter-spacing: 2%;
 }
 
 .text__card{
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   margin: 2% 0;
 }
 .Text{
-  width: 72%;
+  width: 70%;
   margin: 3% 0;
 }
 .Text p{
-  width: 45%;
+  width: 60%;
 }
 .Text h2{
   color: #486DB7;
@@ -237,6 +290,7 @@ nav span{
   font-size: 40px;
   line-height: 40px;
   letter-spacing: -2%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .Text p{
   color: #414141;
@@ -244,26 +298,30 @@ nav span{
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 2%;
+  font-family: 'Merriweather', serif;
 }
 .Text p span{
   color: #B378FF;
 }
 .Card{
   width: 18%;
+  margin: 0 auto;
 }
 .Card h4{
   color: #273B63;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 32px;
-  letter-spacing: 1%;
+  letter-spacing: -2%;
   font-weight: bold;
-}
+  font-family: 'Source Sans Pro', sans-serif;
+} 
 .Card h6{
-  color: #65BAA6;
+  color: #F778B9;
   font-size: 12px;
   font-weight: bold;
   line-height: 16px;
   letter-spacing: 8%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .Card p{
   color: #414141; 
@@ -271,37 +329,66 @@ nav span{
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 2%;
+  font-family: 'Merriweather', serif;
 }
 
 .img__advertising{
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: nowrap;
 }
 .advertising{
   max-width: 100%;
+}
+.img{
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
 }
 .img h6{
   color: #7D7D7D;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-.img__comments .comments{
-  display: flex;
+.slide__comments{
+  width: 90%;
+  max-width: 120em;
+  padding: 2em;
+  color: #000000;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: #E5E5E5;
+  overflow: hidden;
+}
+.content__comments{
+  width: 400%;
+  justify-content: space-between;
+  color: #FFFFFF;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+.comments{
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin-top: 15%;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 2.5%;
+  min-height: 50vh;
+  color: #FFFFFF;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: #E5E5E5;
+  padding: 8px;
 }
 .comments p{
   color: #414141;
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 2%;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
 }
 .comments h4{
   color: #414141;
@@ -309,26 +396,29 @@ nav span{
   line-height: 24px;
   letter-spacing: -2%;
   font-weight: bold;
+  font-family: 'Merriweather', serif;
 }
-.radius{
-  width: 50%;
-  margin-top: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+.content__radius{
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.4em;
+  flex-flow: row nowrap;
 }
-.radius .radius__active{
+.content__radius .radius{
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: #CACACA;
+  list-style: none;
+}
+.content__radius .radius.active{
   background-color: #696969;
 }
-.radius div{
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: #CACACA;
-}
+
 .logo__ES{
-  margin-top: 25%;
+  margin: 25% auto 0 auto;
 }
 
 .up{
@@ -340,27 +430,26 @@ nav span{
   z-index: 1000;
 }
 .worked{
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  margin-top: -7%;
+  margin: -7% 0 0 auto;
 }
 
 .form__faq{
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
 }
 .Form{
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
 }
 .Form h2{
   color: #414141; 
-  margin: 0;}
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -2%;
+}
   
 .Form input, textarea{
   margin: 5% 0 0 0;
@@ -368,20 +457,25 @@ nav span{
   border: 1px solid #273B63;
   padding: 8px;
   width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
 }
 .Form .name__surname{
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 .Form .button{
   width: 100%;
   margin-top: 3%;
-  border: 1px solid #265E6C;
-  background-color: #265E6C;
+  border: 1px solid #696969;
+  background-color: #696969;
   color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
   padding: 8px;
 }
 .Form select{
@@ -395,6 +489,7 @@ nav span{
   font-size: 1.5vh;
   line-height: 32px;
   letter-spacing: -2%;
+  font-family: 'Source Sans Pro', sans-serif;
   margin-right: 10%;
 }
 .faq{
@@ -408,13 +503,14 @@ nav span{
   width: 65%;
 }
 .faq .accordion{
-  background-color: #ECF0F7;
+  background-color: #E5E5E5;
   padding: 8px;
 }
 .faq .accordion .accordion__panel{
   width: 100%;
   padding: 8px;
   margin: 0 0 1% 0;
+  background-color: #cacaca9d;
 }
 .faq .accordion .accordion__tittle{
   display: flex;
@@ -422,17 +518,21 @@ nav span{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #7D7D7D;
-  color: #000000;
   border: none;
   border-bottom: 4px dashed #000000;
-  text-align: left;
   outline: none;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0 0% 1% 0;
-  padding: 8px;
+  margin: 0;
+  padding: 2px;
   cursor: pointer;
+}
+.accordion__tittle:hover{
+  background-color: #afaeae;
+}
+.accordion__tittle h6{
+  color: #414141;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
 }
 .faq .accordion .accordion__text{
   width: 100%;
@@ -446,35 +546,39 @@ nav span{
 }
 
 .logo__icon{
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-}
 
-.long__advertising{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .newsletter{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   margin-top: 3%;
   background-color: #ECF0F7;
 }
-.subscribe .button{
-  margin-left: -25%;
-  border-radius: 8px;
-  border: 1px solid #265E6C;
-  background-color: #265E6C;
-  color: #FFFFFF;
+.subscribe h3{
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
-  padding: 6px;
+  line-height: 32px;
+  letter-spacing: -2%;
+  font-size: 24px;
+  color: #555555;
+}
+.subscribe p{
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 2%;
+  color: #324B7F;
+}
+.subscribe .button{
+  border-radius: 8px;
+  border: 1px solid #696969;
+  background-color: #696969;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
+  padding: 8px;
 }
 .subscribe input{
   padding: 8px;
@@ -490,10 +594,6 @@ footer{
 .logo__text{
   width: 70%;
   margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .logo__text p{
   width: 30%;
@@ -502,12 +602,10 @@ footer{
   font-size: 12px;
   line-height: 16px;
   letter-spacing: -2%;
+  font-family: 'Merriweather', serif;
 }
 .separator{
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   width: 80%;
   margin: 2% auto;
 }
@@ -521,13 +619,12 @@ footer{
 }
 .terms__policies{
   width: 70%;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 .terms__policies a p{
   color: #FFFFFF;
-  font-size: 1.5vh;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 2%;
+  font-family: 'Source Sans Pro', sans-serif;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="assets/logo/logo__icon.png" type="logo"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-escalable=no, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/medias.css">
     <link rel="stylesheet" type="text/css" href="css/mdb.min.css">
@@ -13,8 +13,8 @@
 <body>
     <header>
         <nav>
-            <div class="Nav">
-                <span id="open__close" >
+            <div class="Nav Row">
+                <span id="open__close">
                     <div class="line__1"></div>
                     <div class="line__2"></div>
                     <div class="line__3"></div>
@@ -31,19 +31,19 @@
                 <div class="pregnancy">
                     <h2>Embarazo</h2>
                     <hr>
-                    <ul class="nav__link">
-                        <a href="#"><li class="nav__item">Quiero ser mamá <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
-                        <a href="#"><li class="nav__item">Voy a ser mamá <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
-                        <a href="#"><li class="nav__item">Parto <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
+                    <ul class="nav__link Row">
+                        <a href="#iWantToBeAMom"><li class="nav__item">Quiero ser mamá <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
+                        <a href="#imGoingToBeAMom"><li class="nav__item">Voy a ser mamá <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
+                        <a href="#birth"><li class="nav__item">Parto <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
                     </ul>
                 </div>
                 <div class="education">
                     <h2>Educación</h2>
                     <hr>
-                    <ul class="nav__link">
-                        <a href="#"><li class="nav__item">Aprende a ser mamá <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
-                        <a href="#"><li class="nav__item">Educación para bebés <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
-                        <a href="#"><li class="nav__item">Educación para niños <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
+                    <ul class="nav__link Row">
+                        <a href="#learnToBeAMom"><li class="nav__item">Aprende a ser mamá <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
+                        <a href="#babyEducation"><li class="nav__item">Educación para bebés <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
+                        <a href="#educationForChildren"><li class="nav__item">Educación para niños <img src="assets/icons/arrow__rigth.png" alt="arrow__rigth"></li></a>
                     </ul>
                 </div>
             </div>
@@ -73,34 +73,48 @@
     </div>
 
     <div class="container__all">
-        <div class="titles__all">
-            <div class="titles">
-                <h1>Titulo 1</h1>
+        <div class="titles__all Row">
+            <div id="iWantToBeAMom" class="titles">
+                <h1>Quiero ser madre</h1>
     
-                <h3>Titulo 2</h3>
+                <h3>Qué supone el ser madre</h3>
     
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ab dicta, eos perferendis inventore sunt esse ex modi odit nemo vitae quae molestias eligendi laudantium quos debitis enim, temporibus hic.
-                </p>
+                <div id="textRegular" class="text__regular">
+                    <p>
+                        El deseo de ser madre, de tener y cuidar de los hijos, llega a casi todas las mujeres, pero la decisión depende mucho de la realidad y de los valores de cada una de ellas. Algunas no dudan, lo tienen clarísimo; otras lo quieren, pero se sienten inseguras, no preparadas; y otras, aunque lo deseen tanto como las demás, no encuentran o no disponen de un hueco en su vida para tener un hijo. <br>
+
+                        La decisión de ser madre no debe transformarse en una obsesión ni tampoco en una circunstancia sin consecuencias. Cuando una mujer siente que está preparada para ser madre, el deseo de tener un hijo le llevará a realizar grandes cambios en su vida. <br>
+
+                        Tener un hijo es una responsabilidad y un compromiso, una decisión que debe ser meditada con tranquilidad, confianza y sinceridad. Sentirse preparada para ser  madre es una cuestión que circula por la cabeza de muchas mujeres en algún momento de sus vidas.
+                    </p>
+                </div>
     
-                <button>Boton Regular</button> <br>
-    
-                <button>Boton Negrita</button>
-    
-                <p style="font-weight: bold;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem soluta quisquam eaque quidem earum nesciunt magnam omnis modi unde dolore in qui quas, minima voluptate repudiandae ex deleniti. Voluptatem, alias.
-                </p>
+                <div id="textBold" class="text__bold">
+                    <p>
+                        El deseo de ser madre, de tener y cuidar de los hijos, llega a casi todas las mujeres, pero la decisión depende mucho de la realidad y de los valores de cada una de ellas. Algunas no dudan, lo tienen clarísimo; otras lo quieren, pero se sienten inseguras, no preparadas; y otras, aunque lo deseen tanto como las demás, no encuentran o no disponen de un hueco en su vida para tener un hijo. <br>
+
+                        La decisión de ser madre no debe transformarse en una obsesión ni tampoco en una circunstancia sin consecuencias. Cuando una mujer siente que está preparada para ser madre, el deseo de tener un hijo le llevará a realizar grandes cambios en su vida. <br>
+
+                        Tener un hijo es una responsabilidad y un compromiso, una decisión que debe ser meditada con tranquilidad, confianza y sinceridad. Sentirse preparada para ser  madre es una cuestión que circula por la cabeza de muchas mujeres en algún momento de sus vidas.
+                    </p>
+                </div>
+
+                <input type="button" class="button" id="regularBold" value="Fuente Bold">
+
             </div>
     
             <div class="excerp visible">
+                <h4>Qué es necesario para ser madre</h4>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae laudantium, pariatur corrupti sed quidem quisquam architecto voluptas eum nisi repellendus, modi officiis, magnam fugiat velit hic ducimus culpa nam!
+                    Para ser madre no se requiere título ni experiencia. Los niños no llegan al mundo con un manual de instrucciones debajo del brazo. Nadie nace preparada para ser madre. Sin embargo, las mujeres que están intentando estar preparadas para ser madres pueden contar con mucha información sobre salud, educación, embarazo y parto, a través de los libros y de los medios de comunicación. Incluso ya existen algunas escuelas para padres. <br>
+
+                    Antes de ser madre, prepárate bien
                 </p>
             </div>
         </div>
 
-        <div class="text__card">
-            <div class="Text">
+        <div class="text__card Row">
+            <div id="educationForChildren" class="Text">
                 <h2>1. Asignarles tareas sencillas</h2>
                 <p>
                     La primera idea o estrategia para ayudar a los niños a ser responsables es asignarles tareas sencillas. Para que la situación sea más fácil, puede ser conveniente que un adulto también las haga. Por ejemplo, ayudar a lavar los platos o hacer la colada con alguno de los progenitores es una buena manera de empezar. Será el primer paso para que adquieran autonomía: ser sus modelos. <span>Pueden recoger los platos mientras uno de los progenitores los empieza a lavar.</span> Pueden hacer lo mismo con su propia colada, que separen su ropa blanca de la oscura y la lleven hacia los cubos correspondientes. De esta forma, progresivamente, los niños pueden comenzar a adquirir responsabilidades, lo que se trasladará también al uso de la tecnología, hacer los deberes, gestionar mejor su tiempo (trabajos para clase, tiempo para los amigos, juegos, etc.).
@@ -108,7 +122,7 @@
                 </p>
             </div>
     
-            <div class="Card">
+            <div id="learnToBeAMom" class="Card">
                 <img src="assets/img/photoCard.jpg" alt="card__photo">
                 <h6>NUTRICIÓN</h6>
                 <h4>Colapso mental: cuando siento el peso del mundo sobre mí</h4>
@@ -117,26 +131,52 @@
                 </p>
             </div>
         </div>
+    
 
-        <div class="img__advertising">
+        <div class="img__advertising Row">
             <div class="img__comments">
-                <div class="img">
+                <div id="babyEducation" class="img Row">
                     <img src="assets/img/photoIntermediate.png" alt="photoIntermediate">
                     <h6>Aquí va una descripcion de la foto</h6>
                 </div>
-                <div class="slide__comments">
-                    <div class="comments">
-                        <img src="assets/icons/quotation__marks.png" alt="quotation__marks">
-                        <p>
-                            Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el psicólogo fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo.
-                        </p>
-                        <h4>~ Maria Montessori ~</h4>
-                        <div class="radius">
-                            <div></div>
-                            <div class="radius__active"></div>
-                            <div></div>
+
+                <div id="imGoingToBeAMom" class="slide__comments">
+                    <div class="content__comments Row">
+                        <div class="comments Row">
+                            <img src="assets/icons/quotation__marks.png" alt="quotation__marks">
+                            <p>
+                                Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el psicólogo fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo.
+                            </p>
+                            <h4>~ Maria Montessori ~</h4>
+                        </div>
+                        <div class="comments Row">
+                            <img src="assets/icons/quotation__marks.png" alt="quotation__marks">
+                            <p>
+                                Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el psicólogo fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo.
+                            </p>
+                            <h4>~ Maria Montessori ~</h4>
+                        </div>
+                        <div class="comments Row">
+                            <img src="assets/icons/quotation__marks.png" alt="quotation__marks">
+                            <p>
+                                Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el psicólogo fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo.
+                            </p>
+                            <h4>~ Maria Montessori ~</h4>
+                        </div>
+                        <div class="comments Row">
+                            <img src="assets/icons/quotation__marks.png" alt="quotation__marks">
+                            <p>
+                                Me gustaría agradecer al sitio, me ayudó de una manera inimaginable, el psicólogo fue sumamente servicial y acogedor conmigo y me siento mejor conmigo mismo.
+                            </p>
+                            <h4>~ Maria Montessori ~</h4>
                         </div>
                     </div>
+                    <ul class="content__radius Row">
+                        <li class="radius active"></li>
+                        <li class="radius"></li>
+                        <li class="radius"></li>
+                        <li class="radius"></li>
+                    </ul>
                 </div>
     
                 <img class="logo__ES" src="assets/logo/logo__ES.png" alt="logo__ES">
@@ -153,22 +193,23 @@
             </div>
         </div>
 
-        <div class="worked visible">
+
+        <div class="worked Row visible">
             <img src="assets/img/worked.png" alt="worked">
         </div>
         
-        <div class="form__faq">
+        <div id="birth" class="form__faq Row">
             <section>
-                <form name="form" action="" class="Form">
+                <form name="form" action="" class="Form Row">
                     <h2>Contacto</h2>
-                    <div class="name__surname">
-                        <input type="text"  id="name" name="name" placeholder="Nombre" required   />
-                        <input type="text"  id="surname" name="surname" placeholder="Apellido" required   />
+                    <div class="name__surname Row">
+                        <input type="text"  id="name" name="name" value="" placeholder="Nombre" required   />
+                        <input type="text"  id="surname" name="surname" value="" placeholder="Apellido" required   />
                     </div>
-                    <input type="text" id="address" name="address" placeholder="Dirección" required   />
-                    <input type="email" id="email" name="email" placeholder="Email" required   />
-                    <input type="number" id="phone" name="phone" placeholder="Teléfono" required   />
-                    <select name="select" id="select"> Seleccione una opción:
+                    <input type="text" id="address" name="address" value="" placeholder="Dirección" required   />
+                    <input type="email" id="email" name="email" value="" placeholder="Email" required   />
+                    <input type="number" id="phone" name="phone" value="" placeholder="Teléfono" required   />
+                    <select name="select" id="select" value=""> Seleccione una opción:
                         <option value="1">Quiero ser mamá</option>
                         <option value="2">Voy a ser mamá</option>
                         <option value="3">Parto</option>
@@ -176,25 +217,13 @@
                         <option value="5">Educación para bebés</option>
                         <option value="6">Educación para niños</option>
                     </select>
-                    <div>
-                        <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
-                    </div>
-                    <textarea name="textarea" id="textarea" rows="6" placeholder="Su mensaje"></textarea>
-                    <input type="submit" class="button" value="Enviar Datos">
+                    <textarea name="textarea" id="textarea" value="" rows="6" placeholder="Su mensaje"></textarea>
+                    <input type="submit" id="submit" class="button" onclick="getData()">
                 </form>
             </section>
             
             <div class="faq">
                 <div class="accordion">
-                    <div class="accordion__panel active">
-                        <div class="accordion__tittle">
-                            <h6>¿Cuáles son los pasos para tomar una decisión?</h6><img src="assets/icons/arrow__down.png" alt="arrow__down">
-                        </div>
-                        <p class="accordion__text">
-                            ACA VA UN TEXTO
-                        </p>
-                    </div>
-
                     <div class="accordion__panel">
                         <div class="accordion__tittle">
                             <h6>¿Cuáles son los pasos para tomar una decisión?</h6><img src="assets/icons/arrow__down.png" alt="arrow__down">
@@ -206,7 +235,16 @@
 
                     <div class="accordion__panel">
                         <div class="accordion__tittle">
-                            <h6>¿Cuáles son los pasos para tomar una decisión?</h6><img src="assets/icons/arrow__down.png" alt="arrow__down">
+                            <h6>¿Qué consejos son útiles antes de un parto?</h6><img src="assets/icons/arrow__down.png" alt="arrow__down">
+                        </div>
+                        <p class="accordion__text">
+                            ACA VA UN TEXTO
+                        </p>
+                    </div>
+
+                    <div class="accordion__panel">
+                        <div class="accordion__tittle">
+                            <h6>¿Es bueno entretener a los bebés/niños con smartphones o tablet?</h6><img src="assets/icons/arrow__down.png" alt="arrow__down">
                         </div>
                         <p class="accordion__text">
                             ACA VA UN TEXTO
@@ -216,11 +254,11 @@
             </div>
         </div>
 
-        <div class="logo__icon visible">
+        <div class="logo__icon Row visible">
             <img src="assets/logo/logo__icon.png" alt="logo__icon">
         </div>
 
-        <div class="long__advertising visible">
+        <div class="long__advertising Row visible">
             <img src="assets/img/advertisingLong.png" alt="long__advertising">
         </div>
 
@@ -230,7 +268,7 @@
 
     </div>
 
-    <div class="newsletter">
+    <div class="newsletter Row">
         <div class="news">
             <img src="assets/img/news.png" alt="news">
         </div>
@@ -238,8 +276,8 @@
             <img src="assets/logo/logo__icon.png" alt="logo__icon">
         </div>
         <div class="subscribe">
-            <h3>Titlee</h3>
-            <p>Text</p>
+            <h3>Newsletter</h3>
+            <p>Suscribase a nuestras noticias</p>
             
             <input type="email" size="35" placeholder="Ingrese su correo" />
             <input type="submit" class="button" value="Suscribirse">
@@ -248,14 +286,14 @@
     </div>
 
     <footer>
-        <div class="logo__text">
+        <div class="logo__text Row">
             <img src="assets/logo/mcontigo.png" alt="mcontigo">
             <p>
                 La Mente es Maravillosa is a property of Grupo MContigo© 2012 / 2020. All rights reserved. <br>
                 Los contenidos de esta publicación se redactan solo con fines informativos. En ningún momento pueden servir para facilitar diagnósticos o sustituir la labor de un profesional. Le recomendamos que contacte con su especialista de confianza.
             </p>
         </div>
-        <div class="separator">
+        <div class="separator Row">
             <div></div>
             <div></div>
             <div></div>
@@ -289,7 +327,7 @@
             <div></div>
             <div></div>
             <div></div>
-            <div></div>
+            <div class="visible"></div>
             <div class="visible"></div>
             <div class="visible"></div>
             <div class="visible"></div>
@@ -354,7 +392,7 @@
             <div class="visible"></div>
             <div class="visible"></div>
         </div>
-        <div class="terms__policies">
+        <div class="terms__policies Row">
             <a href="#"><p>Política de Cookies</p></a>
             <a href="#"><p>Política de Privacidad</p></a>
             <a href="#"><p>Términos y condiciones de uso</p></a>
@@ -372,6 +410,5 @@
 
 
     <script src="js/app.js"></script>
-    <script src="js/jquery.min.js"></script>
 </body>
 </html>

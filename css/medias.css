@@ -9,6 +9,9 @@
                 display: block;
                 visibility: visible;
             }
+            .Nav{
+                max-width: 90%;
+            }
             .container__slide{
                 margin-top: 14.5%;
             }
@@ -43,15 +46,20 @@
                 justify-content: center;
             }
             .img img{
-                max-width: 100%;
-                margin-top: 8%;
+                max-width: 70%;
+                margin: 8% auto 0 auto;
+                align-items: center;
+            }
+            .img h6{
+                margin: 0 auto 0 15%;
             }
             .logo__ES{
-                max-width: 90%;
-                margin-bottom: 15%;
+                max-width: 70%;
+                margin: 0 auto 15% 15%;
             }
-            .img__comments .comments{
+            .img__comments .slide__comments{
                 width: 100%;
+                margin: 0 auto;
             }
             .form__faq{
                 flex-direction: column;
@@ -67,7 +75,7 @@
                 margin-left: -10%;
             }
             .worked{
-                margin: 50% auto 0 auto;
+                margin: 10% auto 0 auto;
             }
             .logo__icon{
                 margin-right: -50%;
@@ -83,10 +91,10 @@
                 margin: 5% auto 2% 5%;
             }
             .subscribe .button{
-                margin-left: -30%;
+                margin-left: -33%;
             }
             .separator{
-                width: 100%;
+                width: 95%;
             }
             .logo__text{
                 width: 100%;
