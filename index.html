@@ -22,7 +22,7 @@
 
                 <img src="assets/logo/menteMaravillosa.png" alt="la_mente_es_maravillosa">
 
-                <img src="assets/icons/search.png" alt="search">
+                <input type="text" size="10" id="searchBar" onkeyup="search()" name="search" placeholder="Search">
 
             </div>
         </nav>
@@ -73,7 +73,7 @@
     </div>
 
     <div class="container__all">
-        <div class="titles__all Row">
+        <div class="titles__all Row visible">
             <div id="iWantToBeAMom" class="titles">
                 <h1>Quiero ser madre</h1>
     
@@ -103,14 +103,60 @@
 
             </div>
     
-            <div class="excerp visible">
-                <h4>Qué es necesario para ser madre</h4>
-                <p>
-                    Para ser madre no se requiere título ni experiencia. Los niños no llegan al mundo con un manual de instrucciones debajo del brazo. Nadie nace preparada para ser madre. Sin embargo, las mujeres que están intentando estar preparadas para ser madres pueden contar con mucha información sobre salud, educación, embarazo y parto, a través de los libros y de los medios de comunicación. Incluso ya existen algunas escuelas para padres. <br>
-
-                    Antes de ser madre, prepárate bien
-                </p>
+            <div class="excerp">
+                <h4>Búsqueda rápida</h4>
+                <ol id="list">
+                    <a href="#iWantToBeAMom"><li class="text__ol">Quiero ser mamá</li></a>
+                    <a href="#imGoingToBeAMom"><li class="text__ol">Voy a ser mamá</li></a>
+                    <a href="#birth"><li class="text__ol">Parto</li></a>
+                    <a href="#learnToBeAMom"><li class="text__ol">Aprende a ser mamá</li></a>
+                    <a href="#babyEducation"><li class="text__ol">Educación para bebés</li></a>
+                    <a href="#educationForChildren"><li class="text__ol">Educación para niños</li></a>
+                </ol>
             </div>
+        </div>
+
+        <div class="hidden titles__all Row">
+            <div class="excerp">
+                <h4>Búsqueda rápida</h4>
+                <ol id="list">
+                    <a href="#iWantToBeAMom"><li class="text__ol">Quiero ser mamá</li></a>
+                    <a href="#imGoingToBeAMom"><li class="text__ol">Voy a ser mamá</li></a>
+                    <a href="#birth"><li class="text__ol">Parto</li></a>
+                    <a href="#learnToBeAMom"><li class="text__ol">Aprende a ser mamá</li></a>
+                    <a href="#babyEducation"><li class="text__ol">Educación para bebés</li></a>
+                    <a href="#educationForChildren"><li class="text__ol">Educación para niños</li></a>
+                </ol>
+            </div>
+            <div id="iWantToBeAMom" class="titles">
+                <h1>Quiero ser madre</h1>
+    
+                <h3>Qué supone el ser madre</h3>
+    
+                <div id="textRegular" class="text__regular">
+                    <p>
+                        El deseo de ser madre, de tener y cuidar de los hijos, llega a casi todas las mujeres, pero la decisión depende mucho de la realidad y de los valores de cada una de ellas. Algunas no dudan, lo tienen clarísimo; otras lo quieren, pero se sienten inseguras, no preparadas; y otras, aunque lo deseen tanto como las demás, no encuentran o no disponen de un hueco en su vida para tener un hijo. <br>
+
+                        La decisión de ser madre no debe transformarse en una obsesión ni tampoco en una circunstancia sin consecuencias. Cuando una mujer siente que está preparada para ser madre, el deseo de tener un hijo le llevará a realizar grandes cambios en su vida. <br>
+
+                        Tener un hijo es una responsabilidad y un compromiso, una decisión que debe ser meditada con tranquilidad, confianza y sinceridad. Sentirse preparada para ser  madre es una cuestión que circula por la cabeza de muchas mujeres en algún momento de sus vidas.
+                    </p>
+                </div>
+    
+                <div id="textBold" class="text__bold">
+                    <p>
+                        El deseo de ser madre, de tener y cuidar de los hijos, llega a casi todas las mujeres, pero la decisión depende mucho de la realidad y de los valores de cada una de ellas. Algunas no dudan, lo tienen clarísimo; otras lo quieren, pero se sienten inseguras, no preparadas; y otras, aunque lo deseen tanto como las demás, no encuentran o no disponen de un hueco en su vida para tener un hijo. <br>
+
+                        La decisión de ser madre no debe transformarse en una obsesión ni tampoco en una circunstancia sin consecuencias. Cuando una mujer siente que está preparada para ser madre, el deseo de tener un hijo le llevará a realizar grandes cambios en su vida. <br>
+
+                        Tener un hijo es una responsabilidad y un compromiso, una decisión que debe ser meditada con tranquilidad, confianza y sinceridad. Sentirse preparada para ser  madre es una cuestión que circula por la cabeza de muchas mujeres en algún momento de sus vidas.
+                    </p>
+                </div>
+
+                <input type="button" class="button" id="regularBold" value="Fuente Bold">
+
+            </div>
+
         </div>
 
         <div class="text__card Row">
@@ -218,7 +264,7 @@
                         <option value="6">Educación para niños</option>
                     </select> 
                     <textarea name="textarea" id="textarea" value="" style="margin-top: 5%;" rows="6" placeholder="Su mensaje" required /></textarea>
-                    <input type='checkbox' value='SI' id="checkbox">
+                    <input type='checkbox' value='yes' id="checkbox">
                     Acepto que la pagina use mis datos para futuros contactos.
                     <input type="submit" name="submit" class="button" value="Enviar" onclick="formularioEnviado()">
                 </form>
@@ -277,12 +323,13 @@
         <div class="logo__icon hidden">
             <img src="assets/logo/logo__icon.png" alt="logo__icon">
         </div>
-        <div class="subscribe">
+        <div class="subscribe Row">
             <h3>Newsletter</h3>
             <p>Suscribase a nuestras noticias</p>
-            
-            <input type="email" size="35" placeholder="Ingrese su correo" />
-            <input type="submit" class="button" value="Suscribirse">
+            <div class="subscribe__input Row">
+                <input type="email" size="30" placeholder="Ingrese su correo" />
+                <input type="submit" class="button" value="Suscribirse">
+            </div>
         </div>
 
     </div>

@@ -68,8 +68,23 @@ radius.forEach( ( cadaradius , i )=> {
     })
 })
 
-function formularioEnviado(){
-    
-    alert('Su formulario fue enviado correctamente');
+function search() {
+    let searchBar = document.getElementById('searchBar').value;
+    searchBar = searchBar.toLowerCase();
+    let text = document.getElementsByClassName('text__ol');
+      
+    for (i = 0; i < text.length; i++) { 
+        if (!text[i].innerHTML.toLowerCase().includes(searchBar)) {
+            text[i].style.display="none";
+        }
+        else {
+            text[i].style.display="list-item";                 
+        }
+    }
+}
 
+function formularioEnviado(){
+
+    alert('Su formulario fue enviado correctamente');
+        
 }
