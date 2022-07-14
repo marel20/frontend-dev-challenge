@@ -127,6 +127,7 @@ nav span{
 #searchBar{
   padding: 8px;
   border-radius: 10px;
+  text-align: center;
 }
 
 #searchBar input[type=text] {
