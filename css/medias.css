@@ -10,14 +10,14 @@
                 visibility: visible;
             }
             .Nav{
-                max-width: 90%;
+                max-width: 80%;
             }
             .container__slide{
                 margin-top: 14.5%;
             }
             .container__menu{
                 width: 65%;
-                margin-top: 13%;
+                margin-top: 11%;
             }
             .nav__link{
                 margin-left: 0px;
@@ -46,19 +46,19 @@
                 justify-content: center;
             }
             .img img{
-                max-width: 70%;
+                max-width: 65%;
                 margin: 8% auto 0 auto;
                 align-items: center;
             }
             .img h6{
-                margin: 0 auto 0 15%;
+                margin: 0 auto 0 18%;
             }
             .logo__ES{
-                max-width: 70%;
-                margin: 0 auto 15% 15%;
+                max-width: 60%;
+                margin: 0 auto 15% 20%;
             }
             .img__comments .slide__comments{
-                width: 100%;
+                width: 90%;
                 margin: 0 auto;
             }
             .form__faq{
@@ -107,6 +107,9 @@
             .terms__policies{
                 width: 95%;
                 justify-content: flex-start;
+            }
+            .terms__policies a p{
+                font-size: 10px;
             }
           }
         

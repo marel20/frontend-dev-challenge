@@ -137,7 +137,7 @@
             <div class="img__comments">
                 <div id="babyEducation" class="img Row">
                     <img src="assets/img/photoIntermediate.png" alt="photoIntermediate">
-                    <h6>Aquí va una descripcion de la foto</h6>
+                    <h6>Lo mejor que he hecho en mi vida, ha sido tenerte a ti.</h6>
                 </div>
 
                 <div id="imGoingToBeAMom" class="slide__comments">
@@ -200,25 +200,27 @@
         
         <div id="birth" class="form__faq Row">
             <section>
-                <form name="form" action="" class="Form Row">
+                <form action="" class="Form Row">
                     <h2>Contacto</h2>
                     <div class="name__surname Row">
                         <input type="text"  id="name" name="name" value="" placeholder="Nombre" required   />
                         <input type="text"  id="surname" name="surname" value="" placeholder="Apellido" required   />
                     </div>
                     <input type="text" id="address" name="address" value="" placeholder="Dirección" required   />
-                    <input type="email" id="email" name="email" value="" placeholder="Email" required   />
+                    <input type="email" id="email" name="email" value="" placeholder="Ejemplo@ejemplo.com" required   />
                     <input type="number" id="phone" name="phone" value="" placeholder="Teléfono" required   />
-                    <select name="select" id="select" value=""> Seleccione una opción:
+                    <select name="select" id="select" value="" required /> Seleccione una opción:
                         <option value="1">Quiero ser mamá</option>
                         <option value="2">Voy a ser mamá</option>
                         <option value="3">Parto</option>
                         <option value="4">Aprende a ser mamá</option>
                         <option value="5">Educación para bebés</option>
                         <option value="6">Educación para niños</option>
-                    </select>
-                    <textarea name="textarea" id="textarea" value="" rows="6" placeholder="Su mensaje"></textarea>
-                    <input type="submit" id="submit" class="button" onclick="getData()">
+                    </select> 
+                    <textarea name="textarea" id="textarea" value="" style="margin-top: 5%;" rows="6" placeholder="Su mensaje" required /></textarea>
+                    <input type='checkbox' value='SI' id="checkbox">
+                    Acepto que la pagina use mis datos para futuros contactos.
+                    <input type="submit" name="submit" class="button" value="Enviar" onclick="formularioEnviado()">
                 </form>
             </section>
             
@@ -229,7 +231,7 @@
                             <h6>¿Cuáles son los pasos para tomar una decisión?</h6><img src="assets/icons/arrow__down.png" alt="arrow__down">
                         </div>
                         <p class="accordion__text">
-                            ACA VA UN TEXTO
+                            La mayoría de las veces, las mujeres no decidimos si queremos ser madres o no, porque no nos detenemos a pensar en ello. La decisión de tener un hijo o no tenerlo es muy importante y por lo tanto merece toda nuestra atención.
                         </p>
                     </div>
 
@@ -238,7 +240,7 @@
                             <h6>¿Qué consejos son útiles antes de un parto?</h6><img src="assets/icons/arrow__down.png" alt="arrow__down">
                         </div>
                         <p class="accordion__text">
-                            ACA VA UN TEXTO
+                            Siempre debemos tener presente que cada mujer y cada parto son diferentes. Nuestro consejo es que te informes lo más posible acerca de todo el proceso del parto y puerperio, lo que te aportará tranquilidad, seguridad y confianza, tan valiosas en esos especiales momentos. Con todo ello, tendrás una vivencia más realista y placentera.
                         </p>
                     </div>
 
@@ -247,7 +249,7 @@
                             <h6>¿Es bueno entretener a los bebés/niños con smartphones o tablet?</h6><img src="assets/icons/arrow__down.png" alt="arrow__down">
                         </div>
                         <p class="accordion__text">
-                            ACA VA UN TEXTO
+                           <span style="font-weight: bold;">Se ha de evitar al bebé jugar con el móvil o tableta</span> y solo se recomienda su uso para comunicarse con familiares a través de video-llamadas con el fin de promover las relaciones con sus seres queridos.
                         </p>
                     </div>
                 </div>
